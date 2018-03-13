@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.client.Controller">
+    <HBox fx:id="authPanel" styleClass="auth" VBox.vgrow="ALWAYS">
+        <VBox HBox.hgrow="ALWAYS"></VBox>
+        <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+            <Label styleClass="auth" text="Профсоюзный помощник"/>
+            <Button alignment="CENTER" contentDisplay="CENTER"  styleClass="buttonBot"/>
+            <Label styleClass="auth" text="Логин"/>
+            <TextField fx:id="tfLogin" alignment="TOP_CENTER" promptText="Введите логин"/>
+            <Label styleClass="auth" text="Пароль"/>
+            <PasswordField fx:id="pfPass" onAction="#authorize" alignment="TOP_CENTER" promptText="Введите пароль"/>
+            <Label styleClass="auth"/>
+            <Button fx:id="btnAuth" onAction="#authorize" text="    Войти    " styleClass="buttonEnter"/>
+        </VBox>
+        <VBox HBox.hgrow="ALWAYS"></VBox>
+    </HBox>
+    <HBox fx:id="mainPanel">
+        <VBox styleClass="background" HBox.hgrow="ALWAYS">
+            <HBox>
+                <Button fx:id="btnStartServer" onAction="#startServer" styleClass="buttonOn"/>
+            </HBox>
+            <TableView fx:id="tvTable" onMouseClicked="#selectRowinTable"/>
+            <TextArea fx:id="taText" promptText="Введите текст новости." wrapText="true" VBox.vgrow="ALWAYS"/>
+            <HBox fx:id="broadcastPanel" VBox.vgrow="ALWAYS">
+                <TextField fx:id="tfUrl"/>
+                <Button fx:id="btnUpload" onAction="#chooseFile" styleClass="buttonUploadFile"/>
+                <Button fx:id="btnBroadcast" minWidth="200" onAction="#broadcastMessage" styleClass="buttonBroadcast"
+                        text="Отправить всем"/>
+            </HBox>
+            <HBox fx:id="sendMsgPanel">
+                <TextField fx:id="tfMsg" promptText="Cообщение" HBox.hgrow="ALWAYS"/>
+                <TextField fx:id="tfID" promptText="Введите id"/>
+                <Button fx:id="btnSendMsg" minWidth="140" onAction="#sendMessage" styleClass="buttonBroadcast"
+                        text="Отправить"/>
+            </HBox>
+        </VBox>
+        <ScrollPane focusTraversable="false" minWidth="200" VBox.vgrow="ALWAYS">
+            <VBox alignment="CENTER" focusTraversable="false" styleClass="menu">
+                <Label alignment="CENTER" text="Рассылки"/>
+                <Button fx:id="btnNews" onAction="#showNewsTable" styleClass="buttonNews"/>
+                <Label alignment="CENTER" text="Предложения"/>
+                <Button fx:id="btnIdeas" onAction="#showIdeasTable" styleClass="buttonIdea"/>
+                <Label alignment="CENTER" text="Обратная связь"/>
+                <Button fx:id="btnFeedback" onAction="#showFeedbackTable" styleClass="buttonFeedback"/>
+                <Label alignment="CENTER" text="Список контактов"/>
+                <Button fx:id="btnContacts" onAction="#showContactsTable" styleClass="buttonContacts"/>
+                <Label alignment="CENTER"  text="Информация"/>
+                <Button fx:id="btnInfo"  styleClass="buttonInfo"/>
+            </VBox>
+        </ScrollPane>
+    </HBox>
+</VBox>

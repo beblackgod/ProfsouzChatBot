@@ -1,0 +1,100 @@
+.background {
+    -fx-background-color: #ff4c4e;
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+}
+.auth {
+    -fx-background-color: #ff4c4e;
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+}
+.menu{
+    -fx-background-color: #ffffff;
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: "#323c46";
+    -fx-font-weight: bold;
+}
+.scroll-bar {
+    -fx-font-size: 8pt;
+}
+.buttonBot{
+    -fx-background-color: #ff4c4e;
+     -fx-graphic: url("icons/mainbot.png");
+}
+.buttonEnter{
+    -fx-background-color: #ff4c4e;
+    -fx-text-fill: white;
+}
+.buttonEnter:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: ff4c4e;
+}
+.buttonOn{
+    -fx-background-color: #ff4c4e;
+     -fx-graphic: url("icons/on.png");
+}
+.buttonOn:hover {
+    -fx-background-color: #e6e6e6;
+    -fx-graphic: url("icons/on.png");
+}
+.buttonUploadFile{
+    -fx-background-color: #ff4c4e;
+    -fx-graphic: url("icons/upload.png");
+}
+.buttonUploadFile:hover {
+    -fx-background-color: #e6e6e6;
+    -fx-graphic: url("icons/upload.png");
+}
+.buttonBroadcast{
+    -fx-background-color: #ff4c4e;
+    -fx-text-fill: white;
+
+}
+.buttonBroadcast:hover {
+    -fx-background-color: #e6e6e6;
+    -fx-text-fill: white;
+    -fx-text-fill: "#323c46"
+}
+.buttonNews{
+    -fx-background-color: #ffffff;
+     -fx-graphic: url("icons/news.png");
+}
+.buttonNews:hover {
+    -fx-background-color: #ff4c4e;
+    -fx-graphic: url("icons/newsfocus.png");
+}
+.buttonIdea{
+    -fx-background-color: #ffffff;
+     -fx-graphic: url("icons/idea.png");
+}
+.buttonIdea:hover {
+    -fx-background-color: #ff4c4e;
+    -fx-graphic: url("icons/ideafocus.png");
+}
+.buttonFeedback{
+    -fx-background-color: #ffffff;
+    -fx-graphic: url("icons/feedback.png");
+}
+.buttonFeedback:hover {
+    -fx-background-color: #ff4c4e;
+    -fx-graphic: url("icons/feedbackfocus.png");
+}
+.buttonContacts{
+    -fx-background-color: #ffffff;
+     -fx-graphic: url("icons/contacts.png");
+}
+.buttonContacts:hover {
+    -fx-background-color: #ff4c4e;
+    -fx-graphic: url("icons/contactstfocus.png");
+}
+.buttonInfo{
+    -fx-background-color: #ffffff;
+     -fx-graphic: url("icons/info.png");
+}
+.buttonInfo:hover {
+    -fx-background-color: #ff4c4e;
+    -fx-graphic: url("icons/infofocus.png");
+}
